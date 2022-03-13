@@ -11,8 +11,18 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
         <script src="assets/js/page.js"></script>
+        <script src="assets/js/hopfologie.js"></script>
     </head>
     <body>
+        <script>
+            //Routing Funktionen für die Website
+            page('/', loadContent('home'));
+            page('/podcast', loadContent('podcast'));
+            page('/about', loadContent('about'));
+            page('/impressum', loadContent('impressum'));
+            page('/contact', loadContent('contact'));
+            page('/privacy', loadContent('privacy'));
+        </script>
         <div id="header"></div>
         <div id="menu"><a href="#">Home</a><a href="#">Podcast</a><a href="#">Über uns</a></div>
         <div id="conent"></div>
