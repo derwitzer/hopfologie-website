@@ -6,6 +6,7 @@
         <meta name="author" content="Thomas Witzer">
         <meta name="keywords" content="Podcast, Bier, Österreich, Hopfen, Malz, Thomas, Peter, Verkostung, Craftbier, Wien, Bad Ischl, Hopfologen, Hopfologie">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hopfologie - Österreichs bierigster Podcast</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/hopfologie.css" rel="stylesheet">
         <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -13,12 +14,39 @@
         <script src="assets/js/hopfologie.js"></script>
     </head>
     <body>
-        <div id="header"></div>
-        <div id="menu"><a href="./">Home</a><a href="./podcast">Podcast</a><a href="./about">Über uns</a></div>
-        <div id="content"></div>
-        <div id="footer"><a href="./impressum">Impressum</a><a href="./contact">Kontakt</a><a href="./privacy">Datenschutz</a></div>
+        <header>
+            <div class="container" id="header">Hopfologie</div>
+            <nav class="navbar navbar-expand-md nachbar-light fixed-top bg-light">
+                <div class="container-fluid" id="menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation öffnen">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse-navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./podcast">Podcast</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about">Über uns</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-shrink-0">
+            <div class="container" id="content"></div>
+        </main>
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container" id="hopfologie-footer">
+                <span class="text-muted"><a href="./impressum">Impressum</a> <a href="./contact">Kontakt</a> <a href="./privacy">Datenschutz</a></span>
+            </div>
+        </footer>
         <script>
         	hopfologieRouter();;
-	</script>
+	    </script>
     </body>
 </html>
