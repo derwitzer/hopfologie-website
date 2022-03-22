@@ -1,5 +1,11 @@
+function hopfologieRouter() {
+    let websitePath = window.location.pathname;
+    loadContent(websitePath.substring(1));
+}
+
+
 function loadContent(routing) {
-    loadFile = null
+    let loadFile = null
     switch (routing) {
         case "home":
             loadFile = "assets/html/home.html";
